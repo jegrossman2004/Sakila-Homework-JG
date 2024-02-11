@@ -65,8 +65,7 @@ FROM
         JOIN
     rental r ON st.staff_id = r.staff_id
 GROUP BY s.store_id
-ORDER BY rentals DESC
-LIMIT 1;
+ORDER BY rentals DESC;
 
 
 
@@ -85,8 +84,7 @@ FROM
         JOIN
     rental r ON i.inventory_id = r.inventory_id
 GROUP BY c.category_id
-ORDER BY rentals DESC
-LIMIT 1;
+ORDER BY rentals DESC;
 
 
 #QUESTION 7:
