@@ -109,8 +109,7 @@ FROM
         JOIN
     film f ON i.film_id = f.film_id
 GROUP BY f.film_id
-HAVING last_rental_date < '2024-01-08'
-ORDER BY last_rental_date DESC;
+HAVING last_rental_date < '2024-01-08';
 
 
 #QUESTION 9:
